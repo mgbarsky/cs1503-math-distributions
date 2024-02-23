@@ -1,0 +1,85 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Assignment 6. Probability distributions}
+\author{Your name}
+
+\begin{document}
+\maketitle
+
+
+Solve the following problems -- each problem on a separate page -- and submit to Gradescope for grading. 
+
+\newpage
+\section{Poisson [2 points]}
+In a certain factory accidents occur at a mean rate of 2 per week. Find the probability of less than 3 accidents occurring in a given month.
+
+
+Show steps of your computation.
+
+\newpage
+\section{Normal distribution [4 points]}
+Replacement time for the cell phone devices due to failure is normally distributed with a mean of $\mu=8.2$ years and standard deviation of $\sigma = 1.1$ years. 
+\begin{itemize}
+    \item (a) What is the probability that a randomly selected device will be replaced in less than 5 years?
+    \item (b) As a manufacturer, what period of warranty should I declare if I want only 1\% of my devices to fail during the warranty period?
+\end{itemize}
+
+
+For a final answer you can use the values in the tables.
+
+However, for a full grade please explain your reasoning: do not just give a numeric answer. 
+
+\newpage
+\section{Naive Bayes with numeric attributes [5 points]}
+The historical data about tax evasion is presented in the table below:
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c| } 
+ \hline
+Tid & Refund & Marital status & Taxable income & Evade \\
+ \hline
+1 & Yes & Single & 125K & No \\
+2 & No & Married & 100K & No \\ 
+3 & No & Single & 70K & No \\ 
+4 & Yes & Married & 120K & No \\ 
+5 & No & Divorced & 95K & Yes \\ 
+6 & No & Married & 60K & No \\ 
+7 & Yes & Divorced & 220K & No \\ 
+8 & No & Single & 85K & Yes \\ 
+9 & No & Married & 75K & No \\ 
+10 & No & Single & 90K & Yes \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+Use Naive Bayes classifier to predict the tax evasion for the following record:
+
+Classify: $(_, No, Married, 95K, ?)$
+
+Apply the Laplace normalization for categorical attributes. 
+
+Also provide the actual probability of cheating in your answer.\\
+
+
+Show your steps.\\
+
+I classify this record as: 
+
+The probability of tax evasion is:
+
+\end{document}
+
+
+
